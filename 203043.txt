@@ -1,0 +1,30 @@
+Dimitrij Kotevski, 231270
+
+Cekor 1-8
+Komandi: git init, git remote add origin, git pull, git add, git commit, git push.
+Tuka kreirav privaten repositorium na GitHub i uspesno se povrza so lokalnata papka i se izvrsi prviot push na pocetniot kod.
+
+Cekor 9-14 (Fast-forward Merge)
+Komandi: git checkout -b feature-search-books, git merge feature-search-books.
+Tuka napraviv nova granka za implementacija na metodot za prebaruvanje knigi po zanr. Pri spojuvanje so master grankata se sluci Fast-forward merge bidejki nemase drugi promeni na master.
+
+Cekor 15-23 (Conflict & Recursive Merge)
+Komandi: git checkout -b feature-borrow-book, git merge feature-borrow-book.
+Tuka namerno napraviv razlicni promeni na ista linija vo dve razlicni granki za da predizvikam konflikt. Konfliktot go resiv racno preku Notepad so brisenje na Git oznakite i biranje na posakuvanata verzija.
+
+Cekor 24-37 (Finalizacija i Pull Request)
+Gi izbrisav lokalnite granki koi veke ne mi trebat i napraviv finalen Pull Request na samiot GitHub portal za da gi spoja poslednite sitni promeni i cistenje na kodot.
+
+Graficki prikaz (git log --graph):
+
+* 215ecce (HEAD -> master) Fixed merge conflict by choosing feature version
+|\
+| * f9cf86b (feature-borrow-book) Update comment on feature branch
+* | 197a7d3 Update comment on master branch
+|/
+* b71fa6e (feature-search-books) Implement genre report logic
+* 44dfbbf (origin/master, origin/feature-search-books) Merge branch 'master' of https://github.com/iamdimitrij/SI_2026_Lab1_231270
+|\
+| * 3993553 Initial commit
+* c6d45a9 Add starter code
+* 3f48857 Add starter code
